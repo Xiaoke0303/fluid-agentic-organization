@@ -36,6 +36,11 @@
 
 ---
 
+## 最小协作单元示例
+→ [./examples/minimal-unit.md](./examples/minimal-unit.md)
+
+---
+
 ## 进一步阅读
 
 README 只负责入口。五层模型、五个必要条件、批判与回应见 [WHITEPAPER.md](./WHITEPAPER.md)。
@@ -49,4 +54,4 @@ README 只负责入口。五层模型、五个必要条件、批判与回应见 
 | 阶段 | 概念验证期 |
 | 版本 | v0.2 |
 | 当前重点 | README 重构、最小案例、代理授权模板 |
-| 参与方式 | 提修正 / 补案例
+| 参与方式 | 提修正 / 补案例 |
