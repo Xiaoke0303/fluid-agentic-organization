@@ -59,6 +59,6 @@ These influences shaped the tone and early sensibility of FAO, but they no longe
 
 ## Final boundary statement
 
-These materials have been moved out of the whitepaper main text not because they are unimportant, but because they function better as source context than as primary argumentative骨架. The main text retains a disenchanted hardness; this file preserves the warmth of origins.
+These materials have been moved out of the whitepaper main text not because they are unimportant, but because they function better as source context than as primary argumentative structure. The main text retains a disenchanted hardness; this file preserves the warmth of origins.
 
-FAO did not emerge from vacuum. It was shaped by multiple conceptual streams—some technical, some organizational, some philosophical. This file acknowledges those streams while maintaining the whitepaper's commitment to operational clarity over conceptual dispersion.
+FAO did not emerge from a vacuum. It was shaped by multiple conceptual streams—some technical, some organizational, some philosophical. This file acknowledges those streams while maintaining the whitepaper's commitment to operational clarity over conceptual dispersion.
