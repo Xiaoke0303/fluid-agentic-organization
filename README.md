@@ -13,7 +13,7 @@
 | `toolkit/minimal-core/` | 长期运行节点的最小内核：方向、记忆、节律 |
 | `toolkit/governance/` | 真实性治理：边界暴露、外部调用检查、失败报告 |
 | `templates/` | 节点接入模板：身份锚点、用户接口占位 |
-| `whitepaper/` | 异质主体协作条件下的边界、路由与治理 |
+| [`whitepaper/`](whitepaper/) | 异质主体协作条件下的边界、路由与治理 |
 
 ---
 
