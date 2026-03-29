@@ -4,9 +4,9 @@
 
 ---
 
-## 一句话说明
+## 一句话定义
 
-FAO（Fluid Agentic Organization）是一种在人类主体与智能体主体共存条件下，围绕任务路由与责任锚定展开的协作方法论。
+FAO（Fluid Agentic Organization，流态代理组织）是一种在人类主体与智能体主体共存条件下，围绕任务路由与责任锚定展开的协作方法论。
 
 ---
 
@@ -29,23 +29,16 @@ FAO（Fluid Agentic Organization）是一种在人类主体与智能体主体共
 
 ---
 
-## 证据层
+## 证据层入口
 
-**法律案例**（用于校准边界）：
-- [阿里巴巴诉李某AI幻觉案](cases/legal-ali-vs-li-2026.md)
+[cases/](cases/) —— 支撑材料与案例
 
-**观察样本**（提供外部信号）：
-- [GitHub协作治理机制](observations/github-governance-routing.md)
-- [传统组织转型观察](observations/legacy-org-adaptation.md)
-
-**假设推演**（待验证假设）：
-- [保函流程任务化重构](hypotheses/baohan-task-reflow.md)
-
-**合成案例**（内部记录）：
-- [产品经理张某案例](notes/synthetic-pm-zhang-bias.md)
+- `cases/legal/`：法律案例，用于校准责任边界
+- `cases/observations/`：公开观察样本，提供外部信号，不构成证明
+- `cases/hypotheses/`：待验证假设推演，不代表已成立结论
 
 ---
 
-## 其他入口
+## 拆分视图说明
 
-- [拆分视图（协作层）](chapters/) —— 按章拆分的编辑视图
+[chapters/](chapters/) —— 按章拆分的编辑视图，与完整正文内容一致，**不作为主阅读入口**
