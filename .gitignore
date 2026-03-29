@@ -13,3 +13,20 @@ TestResults.xml
 .kimi/
 .openclaw/
 downloads/
+
+# Runtime configuration (cloud-local only)
+AGENTS.md
+HEARTBEAT.md
+IDENTITY.md
+MEMORY.md
+SOUL.md
+TOOLS.md
+USER.md
+
+# Runtime data directories (cloud-local only)
+memory/
+skills/
+
+# Archives and local docs (cloud-local only)
+archives/
+docs/
