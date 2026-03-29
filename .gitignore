@@ -27,6 +27,10 @@ USER.md
 memory/
 skills/
 
+# Project notes and examples (cloud-local only)
+notes/
+examples/
+
 # Archives and local docs (cloud-local only)
 archives/
 docs/
