@@ -12,34 +12,36 @@
 
 ## 建议阅读顺序
 
-1. [UNIVERSAL-WORK-NODE-FRAMEWORK.md](UNIVERSAL-WORK-NODE-FRAMEWORK.md) — 框架总定义
-2. [META-ACTIONS.md](META-ACTIONS.md) — 元动作表
-3. [OPENCLAW-MAPPING.md](OPENCLAW-MAPPING.md) — OpenClaw 映射
-4. [MIGRATION-PLAN.md](MIGRATION-PLAN.md) — 迁移计划
+1. [core/UNIVERSAL-WORK-NODE-FRAMEWORK.md](core/UNIVERSAL-WORK-NODE-FRAMEWORK.md) — 框架总定义
+2. [core/META-ACTIONS.md](core/META-ACTIONS.md) — 元动作表
+3. [mapping/OPENCLAW-MAPPING.md](mapping/OPENCLAW-MAPPING.md) — OpenClaw 映射
+4. [mapping/MIGRATION-PLAN.md](mapping/MIGRATION-PLAN.md) — 迁移计划
 
 ---
 
 ## 文件分组
 
-### 骨架定义
-- [UNIVERSAL-WORK-NODE-FRAMEWORK.md](UNIVERSAL-WORK-NODE-FRAMEWORK.md) — 框架总定义，六个功能模块说明
-- [META-ACTIONS.md](META-ACTIONS.md) — 14 个元动作表
+### core/ 骨架定义
+- [core/UNIVERSAL-WORK-NODE-FRAMEWORK.md](core/UNIVERSAL-WORK-NODE-FRAMEWORK.md) — 框架总定义，六个功能模块说明
+- [core/META-ACTIONS.md](core/META-ACTIONS.md) — 14 个元动作表
 
-### 角色与真实性
-- [ROLE-CONTRACT.md](ROLE-CONTRACT.md) — 角色契约
-- [TRUTH-CONTRACT.md](TRUTH-CONTRACT.md) — 真实性合同
+### runtime/ 运行与角色
+- [runtime/ROLE-CONTRACT.md](runtime/ROLE-CONTRACT.md) — 角色契约
+- [runtime/OPERATING-RULES.md](runtime/OPERATING-RULES.md) — 运行母规则
+- [runtime/PRE-FLIGHT-SEQUENCE.md](runtime/PRE-FLIGHT-SEQUENCE.md) — 前置检查序列
+- [runtime/judgment-cards/README.md](runtime/judgment-cards/README.md) — 判断卡片接口
 
-### 运行与连续性
-- [OPERATING-RULES.md](OPERATING-RULES.md) — 运行母规则
-- [PRE-FLIGHT-SEQUENCE.md](PRE-FLIGHT-SEQUENCE.md) — 前置检查序列
-- [MEMORY-INDEX.md](MEMORY-INDEX.md) — 长期连续性薄索引
-- [CORRECTION-WRITEBACK.md](CORRECTION-WRITEBACK.md) — 纠错写回协议
-- [judgment-cards/README.md](judgment-cards/README.md) — 判断卡片接口
-- [schemas/correction_record.schema.json](schemas/correction_record.schema.json) — 纠错记录 Schema
+### assurance/ 真实性保障
+- [assurance/TRUTH-CONTRACT.md](assurance/TRUTH-CONTRACT.md) — 真实性合同
 
-### 迁移与映射
-- [OPENCLAW-MAPPING.md](OPENCLAW-MAPPING.md) — OpenClaw 映射文档
-- [MIGRATION-PLAN.md](MIGRATION-PLAN.md) — 迁移计划
+### continuity/ 连续性管理
+- [continuity/MEMORY-INDEX.md](continuity/MEMORY-INDEX.md) — 长期连续性薄索引
+- [continuity/CORRECTION-WRITEBACK.md](continuity/CORRECTION-WRITEBACK.md) — 纠错写回协议
+- [continuity/schemas/correction_record.schema.json](continuity/schemas/correction_record.schema.json) — 纠错记录 Schema
+
+### mapping/ 迁移与映射
+- [mapping/OPENCLAW-MAPPING.md](mapping/OPENCLAW-MAPPING.md) — OpenClaw 映射文档
+- [mapping/MIGRATION-PLAN.md](mapping/MIGRATION-PLAN.md) — 迁移计划
 
 ---
 
