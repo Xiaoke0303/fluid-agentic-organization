@@ -41,6 +41,7 @@
 
 ### mapping/ 迁移与映射
 - [mapping/OPENCLAW-MAPPING.md](mapping/OPENCLAW-MAPPING.md) — OpenClaw 映射文档
+- [mapping/HERMES-MAPPING.md](mapping/HERMES-MAPPING.md) — Hermes 运行时路由样本映射
 - [mapping/MIGRATION-PLAN.md](mapping/MIGRATION-PLAN.md) — 迁移计划
 
 ---
