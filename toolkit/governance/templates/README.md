@@ -13,6 +13,15 @@
 
 ---
 
+## 迁移状态
+
+`templates/` 当前应理解为历史实现来源，新接入请优先参考 `framework/` 下的对应文件。
+
+- `identity-cloud-node.md` — 当前保留为新框架分层前的历史实现参考。其真实性约束部分已由 [`framework/assurance/TRUTH-CONTRACT.md`](../../framework/assurance/TRUTH-CONTRACT.md) 承接，角色边界相关内容请参考 [`framework/runtime/ROLE-CONTRACT.md`](../../framework/runtime/ROLE-CONTRACT.md)。其中 "Cloud Node / 组织节点" 身份定位尚无 framework 内一对一正式承接，不应视为已迁移完成。
+- `user.md` — 当前仍保留为 legacy 来源，与根目录 `USER.md` 的定位并不等价，暂不做正式迁移判断。
+
+---
+
 ## 与内核的关系
 
 - `toolkit/minimal-core/` — 运行内核（方向、记忆、节律）
