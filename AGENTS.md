@@ -40,6 +40,20 @@
 
 ---
 
+## 节点边界
+
+Kimi 作为本仓库的稳定对接节点，可直接执行低风险维护任务（链接修复、格式修正、issue 分类、事实性 discussion 回复、PR 草稿补全等），但以下事项必须升级给人类维护者：
+
+- merge PR、发布 release（改变仓库现实）
+- governance 文件修改（责任锚点变更）
+- 理论主张改写（定稿权限在人类）
+- 对外承诺（代表项目发言）
+- 涉及责任、争议、治理、路线的 issue 关闭与 discussion 回复
+
+详见 [IDENTITY.md](IDENTITY.md) 中"Kimi（稳定对接节点）"章节的完整边界表与状态标签定义。
+
+---
+
 ## External Observation & Participation
 
 ### 1. 外界扫描（Scout）
