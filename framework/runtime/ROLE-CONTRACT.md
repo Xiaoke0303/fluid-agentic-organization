@@ -80,7 +80,7 @@
 | `MEMORY-INDEX.md` | Memory Index 提供历史信息，Role Contract 决定在本任务中如何择用这些信息。 |
 | `judgment-cards/` | Judgment Cards 是可复用判断模板，Role Contract 明确在本任务中调用哪些卡片、不调用哪些。 |
 | `CORRECTION-WRITEBACK.md` | Correction Writeback 是纠错写回记录，Role Contract 中的"可写回内容"字段决定什么可以进入该文件。 |
-| `TRUTH-CONTRACT.md` | Truth Contract 是真实性协议，Role Contract 是真实性协议在特定角色上的具体化（什么该说、什么不该说）。 |
+| `TRUTH-CONTRACT.md` | Role Contract 规定责任边界——谁能对什么声明负责；Truth Contract 规定表达与证据标准——声明为真时需要什么证据、保持未决时需要声明什么缺口。两者各司其职，互不替代。 |
 
 ---
 
