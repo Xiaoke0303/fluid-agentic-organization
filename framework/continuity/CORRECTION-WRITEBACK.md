@@ -200,14 +200,14 @@ ROLE-CONTRACT 提供收口资格；CORRECTION-WRITEBACK 负责把可沉淀的错
 
 ## 十一、与其他文件的关系
 
-| 文件 | 关系 |
+| 文件 | 接口 |
 |------|------|
-| `FAILURE-PROTOCOL.md` | Failure Protocol 是暴露错误的格式，Correction Writeback 是处理错误的协议。前者是输入源，后者是处理层。 |
-| `MEMORY-INDEX.md` | Memory Index 是纠错可能写入的位置之一。Correction Writeback 决定什么可以进入记忆主干。 |
-| `judgment-cards/README.md` | Judgment Cards 是纠错可能写入的位置之一。Correction Writeback 可以创建、修改或废弃判断卡片。 |
-| `ROLE-CONTRACT.md` | Role Contract 中的"可写回内容"字段决定本角色产生的纠错可以写回哪里。 |
-| `TRUTH-CONTRACT.md` | Truth Contract 约束纠错声明的真实性。Correction Writeback 必须服从真实性协议。 |
-| `TERM-MAP.md` | Term Map 是术语纠错的可能写入位置。Correction Writeback 可以决定添加或修改术语映射。 |
+| `OPERATING-RULES.md` | 运行中的失败信号（漂移/伪完成/回退/成本超限）触发写回评估。OPERATING-RULES 提供信号，CORRECTION-WRITEBACK 评估并决定是否正式沉淀。 |
+| `ROLE-CONTRACT.md` | ROLE-CONTRACT 提供静态收口资格。CORRECTION-WRITEBACK 查询该资格，决定谁能把错误沉淀成约束更新。资格和动作分开，互不替代。 |
+| `TRUTH-CONTRACT.md` | 写回声明必须服从真实性约束。TRUTH-CONTRACT 规定表达与证据标准，CORRECTION-WRITEBACK 负责执行写回，不定义 truth 规则。 |
+| `PRE-FLIGHT-SEQUENCE.md` | 写回后的约束更新，可能改变后续准入检查项。PRE-FLIGHT 接收被更新的检查内容，CORRECTION-WRITEBACK 不直接判准入，只负责把约束写回。 |
+| `FAILURE-PROTOCOL.md` | Failure Protocol 暴露错误，是 CORRECTION-WRITEBACK 的输入源之一。前者暴露，后者评估与沉淀。 |
+| `judgment-cards/README.md` | Judgment Cards 是约束更新可能写入的位置之一。CORRECTION-WRITEBACK 可以更新判断卡片，但不等于判断卡片本身。 |
 
 ---
 
