@@ -142,11 +142,12 @@
 
 | 文件 | 关系 |
 |------|------|
-| `ROLE-CONTRACT.md` | Role Contract 限定"什么能做"，Truth Contract 约束"做了之后如何诚实表达"。前者是职责边界，后者是表达约束。 |
+| `ROLE-CONTRACT.md` | Role Contract 规定责任边界——谁能对什么声明负责；Truth Contract 规定表达与证据标准——声明为真时需要什么证据、保持未决时需要声明什么缺口。两者各司其职。 |
 | `judgment-cards/README.md` | Judgment Cards 提供"怎么判断"的模式，Truth Contract 约束"判断后如何表述"。判断正确不等于表达诚实。 |
 | `CORRECTION-WRITEBACK.md` | Correction Writeback 处理已发生的真实性错误，Truth Contract 是事前约束。两者是事后与事前的关系。 |
 | `FAILURE-PROTOCOL.md` | Failure Protocol 暴露错误，Truth Contract 预防错误。前者是诊断，后者是预防。 |
 | `EXTERNAL-CALL-PROTOCOL.md` | External Call Protocol 约束外部调用行为，Truth Contract 约束调用后的声明格式。两者是行为与声明的关系。 |
+| `PRE-FLIGHT-SEQUENCE.md` | Pre-flight 参照 Truth Contract 的标签定义与证据标准，判定当前输出条件是否满足。Truth Contract 提供标准，Pre-flight 执行判定。 |
 | `OPERATING-RULES.md` | Operating Rules 定义任务流程，Truth Contract 约束流程中每个节点的表达真实性。 |
 
 ---

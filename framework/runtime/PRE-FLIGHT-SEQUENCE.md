@@ -69,7 +69,9 @@
 确认任务目标、范围、终止条件是否清楚。若边界不清，后续检查无意义。
 
 ### 2. 角色匹配检查
-对照 `ROLE-CONTRACT.md`，确认当前任务是否在角色可直接承担的范围内。若角色不匹配，应升级或暂停。
+对照 `ROLE-CONTRACT.md`，查询本角色的静态收口资格，确认当前任务是否满足该资格的动态条件。若角色不匹配，应升级或暂停。
+
+**仁问接口**：PRE-FLIGHT 不自行定义收口资格，而是查询 ROLE-CONTRACT 的"收口资格"字段。
 
 ### 3. 信息完备性检查
 对照任务目标，检查是否具备最小信息集。若关键信息缺失，应标记 `[unverified]` 或暂停。
@@ -78,13 +80,17 @@
 检索 `judgment-cards/` 和 `TERM-MAP.md`，确认是否存在可复用的判断接口。若有，准备调用；若无，标记需新建。
 
 ### 5. 输出条件检查
-对照 `TRUTH-CONTRACT.md`，预判哪些内容可直接输出 `[verified]`，哪些只能待验证 `[unverified]` / `[inferred]`。
+参照 `TRUTH-CONTRACT.md` 的标签定义与证据标准，判定当前输出是否满足真实性约束条件。预判哪些内容可直接输出 `[verified]`，哪些必须保持未决 `[unverified]` / `[inferred]`。
+
+**不自行定义标签规则**：标签定义与证据标准由 TRUTH-CONTRACT 提供。
 
 ### 6. 升级/继续/暂停判定
 综合以上检查结果，判定：
 - **继续**：边界清楚、角色匹配、信息基本完备
-- **升级**：边界不清、角色不匹配、高风险需人工介入
+- **升级**：基于 ROLE-CONTRACT 的静态收口资格为"不能收口需升级"，且升级目标（接手主体标识）明确
 - **暂停**：信息严重不足，需补充材料后再进入
+
+**关键**：升级和 fail-closed 都是阻塞后的动态出口，由 PRE-FLIGHT 判定。ROLE-CONTRACT 只提供静态资格。
 
 ---
 
@@ -105,8 +111,8 @@
 
 | 文件 | 关系 |
 |------|------|
-| `ROLE-CONTRACT.md` | Pre-flight 检查角色匹配度，Role Contract 提供匹配标准。前者是检查动作，后者是检查依据。 |
-| `TRUTH-CONTRACT.md` | Pre-flight 预判输出条件，Truth Contract 提供标记规则。前者是事前预判，后者是全程约束。 |
+| `ROLE-CONTRACT.md` | Pre-flight 查询角色的静态收口资格，判定当前任务是否满足该资格的动态条件。ROLE-CONTRACT 提供静态资格，PRE-FLIGHT 执行动态判定。 |
+| `TRUTH-CONTRACT.md` | Pre-flight 参照 TRUTH-CONTRACT 的标签定义与证据标准，判定当前输出条件是否满足。TRUTH-CONTRACT 提供标准，PRE-FLIGHT 执行判定。 |
 | `OPERATING-RULES.md` | Operating Rules 定义任务流程，Pre-flight 是流程开始前的检查序列。后者是前者的前置条件。 |
 | `judgment-cards/README.md` | Pre-flight 检查既有判断接口是否可用，Judgment Cards 是被检查的对象之一。 |
 | `CORRECTION-WRITEBACK.md` | Correction 处理已发生的判断错误，Pre-flight 通过前置检查预防错误。两者是事后与事前的关系。 |
