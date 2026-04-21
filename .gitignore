@@ -34,3 +34,8 @@ examples/
 # Archives and local docs (cloud-local only)
 archives/
 docs/
+
+# Working notes (not part of public project assets)
+notes/dreaming-mapping.md
+notes/harness-engineering-insights.md
+notes/kimi-node-observation.md
