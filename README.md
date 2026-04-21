@@ -26,7 +26,7 @@ FAO 是一个面向人类主体与智能体主体协作的组织框架项目。
 
 ## framework 骨架
 
-[framework/](framework/) 是当前理解 FAO 的首选入口：
+[framework/](framework/) 是内部支撑骨架，用于承接与验证白皮书中的工作节点逻辑，不是当前对外交付的主阅读对象。实现支撑结构如下：
 
 - [core/UNIVERSAL-WORK-NODE-FRAMEWORK.md](framework/core/UNIVERSAL-WORK-NODE-FRAMEWORK.md) — 框架总定义，六个功能模块说明
 - [core/META-ACTIONS.md](framework/core/META-ACTIONS.md) — 14 个元动作表，骨架的元操作层
