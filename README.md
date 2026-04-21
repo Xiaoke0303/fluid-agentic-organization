@@ -74,10 +74,10 @@ FAO 是一个面向人类主体与智能体主体协作的组织框架项目。
 
 ## 白皮书入口
 
-- [whitepaper/FAO-Whitepaper.md](whitepaper/FAO-Whitepaper.md) —— FAO 组织分析主文
+- [whitepaper/FAO-Whitepaper.md](whitepaper/FAO-Whitepaper.md) —— FAO 组织分析主文，当前唯一首要入口
 - [whitepaper/README.md](whitepaper/README.md) —— 白皮书目录与章节入口
 
-两者并行：骨架提供运行接口，白皮书提供分析语言。
+需要查看实现支撑时，再进入 `framework/`；需要查看业务落点时，再进入 `domains/guarantee/`。
 
 ---
 
