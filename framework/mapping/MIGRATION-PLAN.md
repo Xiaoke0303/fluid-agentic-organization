@@ -182,10 +182,19 @@
 
 但尚未把成本作为独立框架文件全面展开。
 
-**后续整合方案**（二选一，待决策）：
-- **方案 A**：在 `OPERATING-RULES.md` 中增设「控本」专章，把 token / 时间 / 调用限额规则写进去
-- **方案 B**：新建 `framework/runtime/CONTEXT-BUDGET.md`（或 `COST-PLANE.md`），作为框架的独立控本文件
-- `notes/cost-line.md` 作为输入素材，不直接升为主框架文件
+**后续整合方案（二选一，待决策）**：
+- ~~方案 A / B~~ → 已执行混合方案
+- `OPERATING-RULES.md`：已对齐术语（模型推理资源 / 工具调用 / 人类审阅注意力），并补回查指向
+- 新建 `framework/runtime/CONTEXT-BUDGET.md`：承接运行时成本量化接口（预算对象、预算入口、默认动作、四方向接口映射）
+- `notes/cost-line.md` 继续作为输入素材，不直接升为主框架文件
+- 组织级成本（岗位重组、生态位竞争、治理可持续性）仍留在白皮书论述，不写进 framework runtime
+
+**成本线最小闭环已形成**：
+- 白皮书保留成本主张与更高层分析
+- `OPERATING-RULES.md` 承接触发条件与推进规则
+- `CONTEXT-BUDGET.md` 承接运行时成本量化接口
+
+**下一步唯一优先项**：启动记忆接口的最小闭环设计。`CORRECTION-WRITEBACK.md` 和 `MEMORY-INDEX.md` 中，预算约束对记忆写回的影响仍停留在方向标注，需要补入实际回查条款。
 
 ### Hermes 运行时样本
 - 已纳入 `framework/mapping/HERMES-MAPPING.md`
@@ -196,7 +205,8 @@
 
 ## 九、当前不做的事
 
-- ❌ 暂不补完整 cost control plane（待方案 A/B 决策）
+- ❌ 暂不补完整 cost control plane（~~待方案 A/B 决策~~ → 已执行，见成本主线小节）
+- ❌ 暂不补完整记忆接口回查条款（下一步优先项）
 - ❌ 暂不补完整 orchestration / eval / tracing 平台
 - ❌ 暂不直接删除旧目录
 - ❌ 暂不把所有旧内容一次性改写进新框架
