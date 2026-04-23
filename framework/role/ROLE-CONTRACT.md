@@ -6,7 +6,6 @@
 
 ## 文档定位
 
-- `IDENTITY.md` 回答"我是谁"（稳定、长期）
 - `ROLE-CONTRACT.md` 回答"我在这个专业域里能承担什么责任、能不能收口"（灵活、短期）
 
 它不是 soul，不是 memory，不是 governance checklist。它是责任与收口资格接口。
@@ -75,8 +74,6 @@
 | 文件 | 关系 |
 |------|------|
 | `PRE-FLIGHT-SEQUENCE.md` | Pre-flight 查询本角色的静态收口资格，判定当前任务条件是否满足该资格的动态条件。ROLE-CONTRACT 只定义静态资格，不判定动态出口。 |
-| `IDENTITY.md` | Identity 是本体，Role Contract 是身份在特定任务中的收窄表达。Identity 不变，Role Contract 随任务变。 |
-| `USER.md` | User 是协作者信息，Role Contract 中的"人类纠错优先级"和"升级规则"需要知道向谁升级。 |
 | `MEMORY-INDEX.md` | Memory Index 提供历史信息，Role Contract 决定在本任务中如何择用这些信息。 |
 | `judgment-cards/` | Judgment Cards 是可复用判断模板，Role Contract 明确在本任务中调用哪些卡片、不调用哪些。 |
 | `CORRECTION-WRITEBACK.md` | Correction Writeback 是纠错写回记录，Role Contract 中的"可写回内容"字段决定什么可以进入该文件。 |
