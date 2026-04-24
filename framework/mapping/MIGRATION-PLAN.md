@@ -274,6 +274,44 @@
 
 ---
 
+## 当前状态结论（2026-04-10）
+
+本轮迁移收口复验已完成。以下结论正式写入本文件，作为后续推进的基准状态。
+
+### 1. framework 已最小完成
+
+`framework/` v1 骨架自洽，已具备接管条件，不再继续以"补全缺失文件"为目标扩张本体。
+
+### 2. 本轮已完成的关键动作
+
+- `CONSTITUTION.md` 已落盘并稳定
+- `HEARTBEAT.md` 已落盘并稳定
+- `TERM-MAP.md` 已落盘并稳定
+- `ROLE-CONTRACT` 已归位到 `framework/role/`
+- `judgment-cards` 已归位到 `framework/continuity/`
+- `ROLE-CONTRACT` 在旧位置的残留引用已清理
+- `PRE-FLIGHT` 对 `ENVIRONMENT-PRECONDITIONS` 的虚假依赖已拆解
+- `framework/README.md` 入口与阅读顺序已修复
+
+### 3. 剩余为可接受的明确缺口
+
+以下增强层文件当前暂不补写，缺口已被识别并记录，不构成阻塞：
+
+- `assurance/`：仅保留 `TRUTH-CONTRACT.md` 的最小形态，不扩展完整 assurance 层
+- `ENVIRONMENT-PRECONDITIONS.md`：暂不新建
+- `IDENTITY.md` / `USER.md` / `STATE.md` / `TOOLS-SKILLS.md` 等 bootstrap 增强层：由云端节点本地 `AGENTS.md` 承接，不另行复刻为 framework 文件
+- `TERM-MAP.md`：当前覆盖核心术语对，不继续扩写为完整词汇表
+
+### 4. 下一阶段主轴转移
+
+- **framework 本体停止扩张**：不再以"补文件"为推进方式
+- **后续重心转向**：
+  - `mapping/` 的实例衔接与异构智能体映射验证
+  - 运行时样本（Hermes / OpenClaw / 其他）的持续对账
+  - 成本主线与记忆接口的最小闭环在真实运行中的触发验证
+
+---
+
 *版本：v1.1*  
 *性质：迁移计划*  
 *生效状态：阶段 1 已完成，阶段 2 待启动（2026-04-10）*
