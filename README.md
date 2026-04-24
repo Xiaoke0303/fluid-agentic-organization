@@ -8,7 +8,7 @@ FAO 不是又一个 agent 编排框架、业务自动化方案或某个 runtime 
 
 ## 当前阶段说明
 
-白皮书第一轮成稿（`whitepaper/FAO-Whitepaper.md`）是理解 FAO 组织分析主线的入口之一。当前项目已扩展为组织分析层与通用工作节点框架双层并行。
+白皮书（`whitepaper/FAO-Whitepaper.md`）承载组织分析主线。framework v1 承载通用工作节点最小骨架。mapping 承载框架在真实 runtime 中的验证记录。三者并行，成熟度不同。
 
 `framework/` 是通用工作节点框架，与白皮书并行，不是白皮书的附属实现。
 
@@ -59,14 +59,8 @@ FAO 不是又一个 agent 编排框架、业务自动化方案或某个 runtime 
 
 以下 working notes 作为 sidecar 保留，不替代白皮书主文，也不直接构成 framework 的一部分。
 
-- `notes/cost-line.md` —— 成本主线 working note
-- `notes/memory-line.md` —— 记忆主线 working note
-
----
-
-## 成本主线占位
-
-成本是白皮书中的重要主线。运行时成本最小闭环已形成（`OPERATING-RULES.md` 承接触发条件与推进规则，`CONTEXT-BUDGET.md` 承接量化接口），组织级成本仍在白皮书展开。
+- `notes/cost-line.md` —— 成本主线：人力成本、token 成本、组织成本结构、算法套利与生态位
+- `notes/memory-line.md` —— 记忆主线：薄记忆、纠错写回、判断卡、长期连续性与跨节点沉淀
 
 ---
 
@@ -114,10 +108,10 @@ FAO 不是又一个 agent 编排框架、业务自动化方案或某个 runtime 
 
 ## 当前状态
 
-- **仓库版本**：v0.4
-- **白皮书版本**：v0.3 → 第4-6章已完成本轮改写（路由接入成本约束、验证与纠错机制替代治理问题、成本约束并入边界讨论），当前进入第一轮成稿整理阶段
-- **框架版本**：framework v1 骨架已形成，与白皮书并行维护
-- **当前重点**：framework v1 收口后的入口对齐与 mapping 验证推进
+- **白皮书**：组织分析主线与核心论证基本成型，细节、案例、量化与成本约束仍在补充
+- **framework v1**：通用工作节点最小骨架已完成，mapping verification、增强层协议与跨 runtime 验证仍在早期
+- **mapping**：已启动，第一条 OpenClaw 实例已落盘，尚处早期验证阶段
+- **当前重点**：入口对齐、mapping 验证推进、白皮书细节补充
 - **参与方式**：提修正 / 补案例 / 指出不清楚之处
 
 ---
