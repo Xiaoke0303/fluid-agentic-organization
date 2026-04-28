@@ -28,6 +28,10 @@ USER.md
 memory/
 skills/
 
+# Runtime cache (not part of long-term memory)
+memory/.dreams/*.json
+memory/.dreams/*.jsonl
+
 # Sensitive files
 cookies.json
 .env
