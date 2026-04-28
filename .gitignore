@@ -28,11 +28,35 @@ USER.md
 memory/
 skills/
 
+# Sensitive files
+cookies.json
+.env
+
+# Python environments
+venv/
+__pycache__/
+*.pyc
+
+# Node modules (if any)
+node_modules/
+
 # Project examples (cloud-local only)
 examples/
 
-# Archives and local docs (cloud-local only)
-archives/
+# Archives policy
+# Keep lightweight archive metadata and text files trackable.
+# Exclude large/binary archive payloads.
+archives/**/*.pdf
+archives/**/*.zip
+archives/**/*.tar
+archives/**/*.tar.gz
+archives/**/*.7z
+archives/**/*.bin
+archives/**/*.dmg
+archives/**/*.sqlite
+archives/**/.DS_Store
+
+# Docs (cloud-local only)
 docs/
 
 # Working notes (not part of public project assets)
