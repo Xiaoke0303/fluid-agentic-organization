@@ -43,8 +43,3 @@ FAO（Fluid Agentic Organization，流态代理组织）是一种在人类主体
   - `conceptual-neighbors.md`：FAO 的概念邻近与思想背景说明，不承担主论证功能
 - `cases/hypotheses/`：待验证假设推演，不代表已成立结论
 
----
-
-## 拆分视图说明
-
-[chapters/](chapters/) —— 按章拆分的编辑视图，与完整正文内容一致，**不作为主阅读入口**
