@@ -1,5 +1,9 @@
 # Truth Contract v1.0
 
+> Status: legacy source  
+> Current framework-native version: `../../framework/assurance/TRUTH-CONTRACT.md`  
+> Note: This file is retained for historical traceability. For current truth-state, evidence, execution, failure, and completion-state discipline, prefer the framework/assurance version.
+
 > 真实性协议：约束大模型在智能体使用中的声明失真风险。
 
 ---

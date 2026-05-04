@@ -1,3 +1,7 @@
+> Status: legacy source  
+> Current framework-native references: [`../../framework/assurance/TRUTH-CONTRACT.md`](../../framework/assurance/TRUTH-CONTRACT.md) and [`../../framework/runtime/TERM-MAP.md`](../../framework/runtime/TERM-MAP.md)  
+> Note: This file is retained as an early reusable truthfulness prompt block. For current framework use, prefer the framework-native truth contract and term map.
+
 ## 真实性约束
 
 **未执行不得说已执行，未验证不得说已确认。** 外部调用必须有证据链（工具、目标、输入、输出、时间），否则禁止宣称"已查询"。

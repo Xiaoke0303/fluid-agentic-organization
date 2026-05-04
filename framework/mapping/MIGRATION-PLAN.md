@@ -89,7 +89,7 @@
 | 求真 | `TRUTH-CONTRACT.md` | `toolkit/governance/TRUTH-CONTRACT-v1.md` | 直接替代 | 旧 truth contract 被新版本直接替代；真实性约束同时写入 `AGENTS.md` |
 | 验证 | `EXTERNAL-CALL-PROTOCOL.md` | `toolkit/governance/EXTERNAL-CALL-CHECKLIST.md` | 拆分迁移 | ✅ **已迁移** |
 | 代谢 | `HEARTBEAT.md` | `toolkit/minimal-core/heartbeat.md` | 直接映射 | 一对一对应，功能一致 |
-| 消歧 | `TERM-MAP.md` | `toolkit/governance/SHARED-TRUTHFULNESS-BLOCK.md`（局部） | 扩展迁移 | 旧 shared block 只有极小术语约束，不足以承担消歧元动作 |
+| 消歧 | `TERM-MAP.md` | `toolkit/governance/SHARED-TRUTHFULNESS-BLOCK.md`（局部） | 扩展迁移 | ✅ 旧 shared block 已 legacy 化；消歧由 TERM-MAP.md 承担 |
 | 环境切分 | `ENVIRONMENT-PRECONDITIONS.md` | 无直接旧文件 | 新建 | 旧结构完全缺失环境切分层 |
 
 **迁移复杂度评估**：
@@ -106,12 +106,12 @@
 | `toolkit/minimal-core/soul.md` | `IDENTITY.md` / `SOUL.md`（bootstrap 层） | 映射承接 | 保留待迁 |
 | `toolkit/minimal-core/memory.md` | `framework/MEMORY-INDEX.md` + `memory/` 目录 | 映射承接 | 已部分承接 |
 | `toolkit/minimal-core/heartbeat.md` | `HEARTBEAT.md`（bootstrap 层） | 映射承接 | 保留待迁 |
-| `toolkit/governance/TRUTH-CONTRACT-v1.md` | `framework/TRUTH-CONTRACT.md` | 映射承接 | 新版本已替代 |
+| `toolkit/governance/TRUTH-CONTRACT-v1.md` | `framework/assurance/TRUTH-CONTRACT.md` | 映射承接 | **已替代，legacy 化完成** |
 | `toolkit/governance/EXTERNAL-CALL-CHECKLIST.md` | `framework/runtime/EXTERNAL-CALL-PROTOCOL.md` | 拆分迁移 | **已迁移** |
 | `toolkit/governance/FAILURE-REPORT-CHECKLIST.md` | `framework/runtime/FAILURE-PROTOCOL.md` | 拆分迁移 | **已迁移** |
 | `toolkit/governance/templates/identity-cloud-node.md` | `framework/ROLE-CONTRACT.md` + `IDENTITY.md` | 后续拆分 | legacy 保留 |
 | `toolkit/governance/templates/user.md` | `USER.md`（bootstrap 层） | 映射承接 | 保留待迁 |
-| `toolkit/governance/schemas/` | `framework/schemas/` | 映射承接 | 已部分承接 |
+| `toolkit/governance/schemas/` | `framework/continuity/schemas/` | 映射承接 | `correction_record` 已迁移；其余 schema 保留为 legacy |
 | `notes/cost-line.md` | 待定（`CONTEXT-BUDGET.md` 或独立 `COST-PLANE.md`） | 后续整合 | 已记录，待融入框架 |
 
 ---
@@ -154,8 +154,9 @@
 本轮迁移以旧结构归宿确认与状态标注为主，尚未进入旧正文删除阶段。
 
 - `memory.md` — 已有明确新归宿（`framework/continuity/MEMORY-INDEX.md`）
-- `TRUTH-CONTRACT-v1.md` — 已有明确新归宿（`framework/assurance/TRUTH-CONTRACT.md`）
-- `soul.md`、`heartbeat.md`、`schemas/`、`templates/` — 当前仍保留为 legacy 来源，尚未完成一对一正式承接
+- `TRUTH-CONTRACT-v1.md` — 已有明确新归宿（`framework/assurance/TRUTH-CONTRACT.md`），已 legacy 化
+- `soul.md`、`heartbeat.md`、`templates/` — 当前仍保留为 legacy 来源，尚未完成一对一正式承接
+- `schemas/` — `correction_record` 已迁移至 `framework/continuity/schemas/`；其余 schema 保留为 legacy
 
 因此，当前只能视为"第一阶段迁移对账完成"，而不能视为整体迁移完成。
 
@@ -246,7 +247,8 @@
 - [ ] 在 `toolkit/minimal-core/soul.md` 头部添加legacy说明和指向 `SOUL.md`/`IDENTITY.md` 的链接
 - [ ] 在 `toolkit/minimal-core/memory.md` 头部添加legacy说明和指向 `framework/continuity/MEMORY-INDEX.md` 的链接
 - [ ] 在 `toolkit/minimal-core/heartbeat.md` 头部添加legacy说明和指向 `HEARTBEAT.md` 的链接
-- [ ] 在 `toolkit/governance/TRUTH-CONTRACT-v1.md` 头部添加deprecated说明和指向 `framework/assurance/TRUTH-CONTRACT.md` 的链接
+- [x] 在 `toolkit/governance/TRUTH-CONTRACT-v1.md` 头部添加 deprecated 说明和指向 `framework/assurance/TRUTH-CONTRACT.md` 的链接（已 legacy 化）
+- [x] 在 `toolkit/governance/SHARED-TRUTHFULNESS-BLOCK.md` 头部添加 legacy 说明
 - [x] 评估 `EXTERNAL-CALL-CHECKLIST.md` 内容，迁移到 `framework/runtime/EXTERNAL-CALL-PROTOCOL.md`（已迁移；toolkit 副本保留为 legacy source）
 - [x] 评估 `FAILURE-REPORT-CHECKLIST.md` 内容，迁移到 `framework/runtime/FAILURE-PROTOCOL.md`（已迁移；toolkit 副本保留为 legacy source）
 - [ ] 更新 `toolkit/governance/templates/` 的 README，说明模板与新 `ROLE-CONTRACT.md` 的关系
