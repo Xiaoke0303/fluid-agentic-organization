@@ -6,11 +6,22 @@
 
 ## 当前定位
 
-toolkit/ 保留早期 minimal-core 与 governance 实验的历史痕迹。
+**Status: non-active legacy reference**
 
-**它不是 FAO 的当前正式运行入口。**
+toolkit/ 不再作为当前运行时、治理或定向入口。它保留为历史参考，用于：
+
+- **historical traceability**：追溯 FAO 早期最小工具集与治理实验的设计意图
+- **legacy schemas**：保留旧版 schema 文件（evidence_record、execution_record、failure_object）
+- **partially superseded templates**：`identity-cloud-node.md` 角色边界已承接但 "Cloud Node" 身份定位无一对一 successor；`user.md` 与根目录 `USER.md` 定位不等价
+- **early minimal-core and governance history**：方向、薄记忆、节律、真实性约束的早期表述
 
 当前正式的运行时与接口定义位于 [framework/](../framework/)。
+
+## 为什么不是 fully retired
+
+- Cloud Node 模板尚未被 framework 完全替代
+- user 模板与根目录 USER.md 定位不等价
+- legacy schemas 保留但未迁移
 
 ## 如何阅读
 

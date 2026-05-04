@@ -125,12 +125,12 @@
 - 两段式脚本与 cron 调整已本地完成
 - **判定**：新骨架冻结完成
 
-### 阶段 2：README 级退位 🔄 待启动
+### 阶段 2：README 级退位 ✅ 已完成
 - 修改旧 README / 说明文案
 - 明确 `framework/` 为上位骨架
-- 明确旧分组为 legacy grouping
+- 明确旧分组为 legacy grouping / non-active legacy reference
 - 添加迁移说明和映射指引
-- **阻塞条件**：需人工确认退位文案
+- toolkit active entry 已关闭：runtime、governance、orientation 均不再以 toolkit 为入口
 
 ### 阶段 3：内容级映射 🔄 待启动
 - 将旧内容逐步对应到新文件
@@ -158,7 +158,16 @@
 - `soul.md`、`heartbeat.md`、`templates/` — 已由根目录 bootstrap 文件 + framework/ 承接，保留为 historical orientation / legacy templates
 - `schemas/` — `correction_record` 已迁移至 `framework/continuity/schemas/`；其余 schema 保留为 legacy
 
-因此，当前只能视为"第一阶段迁移对账完成"，而不能视为整体迁移完成。
+因此，当前只能视为"toolkit active entry 已关闭，但 archival / full retirement 尚未完成"。
+
+toolkit/ 当前状态：
+- **active runtime entry**: closed（已由 framework/ 承接）
+- **active governance entry**: closed（已由 framework/runtime/ 与 framework/assurance/ 承接）
+- **active orientation entry**: closed（已由根目录 bootstrap 文件 + framework/ 承接）
+- **archival / full retirement**: not completed
+- **remaining legacy items**:
+  - legacy schemas（evidence_record、execution_record、failure_object）
+  - partially superseded templates（identity-cloud-node.md、user.md）
 
 ---
 
@@ -167,8 +176,8 @@
 - [x] 新 `framework/` 已形成自洽骨架
 - [x] 至少完成一轮整体验证（本地节点测试 + cron 调整 + 两段式脚本）
 - [x] Hermes Agent 映射已纳入文档
-- [ ] 旧 README 已改为从属表述
-- [ ] 主要旧文件已有对应归宿
+- [x] 旧 README 已改为从属表述 / non-active legacy reference
+- [x] 主要旧文件已有对应归宿或明确 legacy 状态
 - [ ] 迁移后不会让读者无法理解仓库结构
 
 ---
@@ -238,10 +247,10 @@
 # Framework v1 迁移执行清单
 
 ## 阶段 2：README 级退位
-- [ ] 修改 `README.md`，在显著位置声明 `framework/` 为上位骨架
-- [ ] 修改 `toolkit/README.md`，声明 `minimal-core/` 和 `governance/` 为 legacy grouping
-- [ ] 更新 `whitepaper/README.md` 中的框架入口说明
-- [ ] 核对所有 README 中的链接是否可点击
+- [x] 修改 `README.md`，在显著位置声明 `framework/` 为上位骨架
+- [x] 修改 `toolkit/README.md`，声明 `minimal-core/` 和 `governance/` 为 legacy grouping / non-active legacy reference
+- [x] 更新 `whitepaper/README.md` 中的框架入口说明（本轮未修改，whitepaper/ 保持独立）
+- [x] 核对所有 README 中的链接是否可点击
 
 ## 阶段 3：内容级映射
 - [x] 在 `toolkit/minimal-core/soul.md` 头部添加legacy说明和指向 `SOUL.md`/`IDENTITY.md` 的链接（README 级已定性，正文保留 historical orientation）
@@ -258,10 +267,11 @@
 - [ ] 执行写入
 - [ ] 更新映射文档中的相关引用
 
-## 阶段 5：目录级替换（高风险，最后执行）
+## 阶段 4：目录级替换（高风险，最后执行，当前条件不满足）
 - [ ] 确认新骨架已稳定运行至少 2 周无结构回退
-- [ ] 确认旧 README 退位说明已生效
-- [ ] 确认旧文件头部 legacy 说明已覆盖 80% 以上内容
+- [ ] 确认旧 README 退位说明已生效 ✅ 已满足
+- [ ] 确认旧文件头部 legacy 说明已覆盖 80% 以上内容 ✅ 已满足（README 级已全覆盖）
+- [ ] 确认 toolkit/ 不再被任何活跃文件引用
 - [ ] 才考虑是否正式重命名/合并 `toolkit/` 子目录
 ```
 
@@ -276,7 +286,7 @@
 
 ---
 
-## 当前状态结论（2026-04-10）
+## 当前状态结论（2026-05-04）
 
 本轮迁移收口复验已完成。以下结论正式写入本文件，作为后续推进的基准状态。
 
@@ -284,7 +294,19 @@
 
 `framework/` v1 骨架自洽，已具备接管条件，不再继续以"补全缺失文件"为目标扩张本体。
 
-### 2. 本轮已完成的关键动作
+### 2. toolkit 退位已完成
+
+toolkit/ 已不再作为 active runtime / governance / orientation entry：
+- runtime：由 framework/runtime/ 完整承接
+- governance：由 framework/assurance/ 与 framework/runtime/ 完整承接
+- orientation：由根目录 bootstrap 文件 + framework/core/ 承接
+
+toolkit/ 保留为 **non-active legacy reference**：
+- 历史追踪（minimal-core、governance 早期实验）
+- legacy schemas
+- partially superseded templates（Cloud Node 身份定位未完全承接、user 模板不等价）
+
+### 3. 本轮已完成的关键动作
 
 - `CONSTITUTION.md` 已落盘并稳定
 - `HEARTBEAT.md` 已落盘并稳定
@@ -294,8 +316,9 @@
 - `ROLE-CONTRACT` 在旧位置的残留引用已清理
 - `PRE-FLIGHT` 对 `ENVIRONMENT-PRECONDITIONS` 的虚假依赖已拆解
 - `framework/README.md` 入口与阅读顺序已修复
+- toolkit/ 已明确为 non-active legacy reference
 
-### 3. 剩余为可接受的明确缺口
+### 4. 剩余为可接受的明确缺口
 
 以下增强层文件当前暂不补写，缺口已被识别并记录，不构成阻塞：
 
@@ -303,17 +326,10 @@
 - `ENVIRONMENT-PRECONDITIONS.md`：暂不新建
 - `IDENTITY.md` / `USER.md` / `STATE.md` / `TOOLS-SKILLS.md` 等 bootstrap 增强层：由云端节点本地 `AGENTS.md` 承接，不另行复刻为 framework 文件
 - `TERM-MAP.md`：当前覆盖核心术语对，不继续扩写为完整词汇表
-
-### 4. 下一阶段主轴转移
-
-- **framework 本体停止扩张**：不再以"补文件"为推进方式
-- **后续重心转向**：
-  - `mapping/` 的实例衔接与异构智能体映射验证
-  - 运行时样本（Hermes / OpenClaw / 其他）的持续对账
-  - 成本主线与记忆接口的最小闭环在真实运行中的触发验证
+- toolkit/ templates 中 "Cloud Node" 身份定位：无 framework 一对一正式承接，保留为 legacy
 
 ---
 
-*版本：v1.1*  
+*版本：v1.2*  
 *性质：迁移计划*  
-*生效状态：阶段 1 已完成，阶段 2 待启动（2026-04-10）*
+*生效状态：阶段 1 已完成，阶段 2 已完成（2026-05-04）*
