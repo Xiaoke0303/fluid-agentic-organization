@@ -1,5 +1,9 @@
 # Failure Report Checklist
 
+> Status: legacy source  
+> Current framework-native version: `../../framework/runtime/FAILURE-PROTOCOL.md`  
+> Note: This file is retained for historical traceability. For current runtime use, prefer the framework/runtime version.
+
 > 失败后的结构化报告清单。
 
 ---

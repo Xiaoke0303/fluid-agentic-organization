@@ -1,5 +1,9 @@
 # External Call Checklist
 
+> Status: legacy source  
+> Current framework-native version: `../../framework/runtime/EXTERNAL-CALL-PROTOCOL.md`  
+> Note: This file is retained for historical traceability. For current runtime use, prefer the framework/runtime version.
+
 > 执行外部操作前的自检清单。
 
 适用于：网页访问、文件读取、API 调用、环境检查、代码执行、浏览器操作、其他外部动作。

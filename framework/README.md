@@ -39,7 +39,9 @@ toolkit/ 保留为早期最小工具集与治理实验的历史参考。
 7. [runtime/PRE-FLIGHT-SEQUENCE.md](runtime/PRE-FLIGHT-SEQUENCE.md) — 前置检查序列
 8. [runtime/TERM-MAP.md](runtime/TERM-MAP.md) — 术语消歧入口
 9. [assurance/TRUTH-CONTRACT.md](assurance/TRUTH-CONTRACT.md) — 真实性合同
-10. [continuity/MEMORY-INDEX.md](continuity/MEMORY-INDEX.md) — 长期连续性薄索引
+10. [runtime/EXTERNAL-CALL-PROTOCOL.md](runtime/EXTERNAL-CALL-PROTOCOL.md) — 外部调用协议
+11. [runtime/FAILURE-PROTOCOL.md](runtime/FAILURE-PROTOCOL.md) — 失败协议
+12. [continuity/MEMORY-INDEX.md](continuity/MEMORY-INDEX.md) — 长期连续性薄索引
 11. [continuity/CORRECTION-WRITEBACK.md](continuity/CORRECTION-WRITEBACK.md) — 纠错写回协议
 12. [mapping/OPENCLAW-MAPPING.md](mapping/OPENCLAW-MAPPING.md) — OpenClaw 映射
 13. [mapping/MIGRATION-PLAN.md](mapping/MIGRATION-PLAN.md) — 迁移计划
@@ -60,6 +62,8 @@ toolkit/ 保留为早期最小工具集与治理实验的历史参考。
 - [runtime/OPERATING-RULES.md](runtime/OPERATING-RULES.md) — 运行母规则
 - [runtime/PRE-FLIGHT-SEQUENCE.md](runtime/PRE-FLIGHT-SEQUENCE.md) — 前置检查序列
 - [runtime/TERM-MAP.md](runtime/TERM-MAP.md) — 术语消歧入口
+- [runtime/EXTERNAL-CALL-PROTOCOL.md](runtime/EXTERNAL-CALL-PROTOCOL.md) — 外部调用协议
+- [runtime/FAILURE-PROTOCOL.md](runtime/FAILURE-PROTOCOL.md) — 失败协议
 - [runtime/CONTEXT-BUDGET.md](runtime/CONTEXT-BUDGET.md) — 上下文预算
 
 ### assurance/ 真实性保障

@@ -82,12 +82,12 @@
 | 收窄 | `ROLE-CONTRACT.md` | `toolkit/governance/templates/identity-cloud-node.md` | 拆分迁移 | 模板的身份部分映射到 `IDENTITY.md`，任务角色部分映射到 `ROLE-CONTRACT.md` |
 | 择记 | `MEMORY-INDEX.md` | `toolkit/minimal-core/memory.md` | 扩展迁移 | `memory.md` 的薄存储原则迁移为 `MEMORY-INDEX.md` + `memory/` 目录 |
 | 判断 | `judgment-cards/` | `toolkit/governance/templates/`（部分） | 新建映射 | 旧模板只有零散判断提示，无显式 judgment-cards 目录；需新建 |
-| 纠错 / 写回 | `CORRECTION-WRITEBACK.md` | `toolkit/governance/FAILURE-REPORT-CHECKLIST.md` | 拆分迁移 | 失败报告行为保留，但纠错后的"写回"机制需要 `CORRECTION-WRITEBACK.md` 新建承接 |
+| 纠错 / 写回 | `CORRECTION-WRITEBACK.md` | `toolkit/governance/FAILURE-REPORT-CHECKLIST.md` | 拆分迁移 | ✅ 失败报告行为已由 `FAILURE-PROTOCOL.md` 承接；纠错后的"写回"机制由 `CORRECTION-WRITEBACK.md` 承接 |
 | 状态锚定 | `STATE.md` | 无直接旧文件 | 新建 | 旧结构缺少显式状态锚定文件，由各 prompt 片段隐式承担 |
 | 统筹 | `OPERATING-RULES.md` | `toolkit/governance/EXTERNAL-CALL-CHECKLIST.md`（外部调用统筹部分） | 扩展迁移 | 旧 checklist 只覆盖外部调用，新文件扩展为全局运行母规则 |
 | 控本 | `CONTEXT-BUDGET.md` + `OPERATING-RULES.md` | 无直接旧文件 | 新建 | 旧结构缺少显式成本控制文件，仅依赖 provider 额度限制 |
 | 求真 | `TRUTH-CONTRACT.md` | `toolkit/governance/TRUTH-CONTRACT-v1.md` | 直接替代 | 旧 truth contract 被新版本直接替代；真实性约束同时写入 `AGENTS.md` |
-| 验证 | `EXTERNAL-CALL-PROTOCOL.md` | `toolkit/governance/EXTERNAL-CALL-CHECKLIST.md` | 拆分迁移 | 外部调用 checklist 的行为映射到验证协议，但需扩展为完整协议 |
+| 验证 | `EXTERNAL-CALL-PROTOCOL.md` | `toolkit/governance/EXTERNAL-CALL-CHECKLIST.md` | 拆分迁移 | ✅ **已迁移** |
 | 代谢 | `HEARTBEAT.md` | `toolkit/minimal-core/heartbeat.md` | 直接映射 | 一对一对应，功能一致 |
 | 消歧 | `TERM-MAP.md` | `toolkit/governance/SHARED-TRUTHFULNESS-BLOCK.md`（局部） | 扩展迁移 | 旧 shared block 只有极小术语约束，不足以承担消歧元动作 |
 | 环境切分 | `ENVIRONMENT-PRECONDITIONS.md` | 无直接旧文件 | 新建 | 旧结构完全缺失环境切分层 |
@@ -107,8 +107,8 @@
 | `toolkit/minimal-core/memory.md` | `framework/MEMORY-INDEX.md` + `memory/` 目录 | 映射承接 | 已部分承接 |
 | `toolkit/minimal-core/heartbeat.md` | `HEARTBEAT.md`（bootstrap 层） | 映射承接 | 保留待迁 |
 | `toolkit/governance/TRUTH-CONTRACT-v1.md` | `framework/TRUTH-CONTRACT.md` | 映射承接 | 新版本已替代 |
-| `toolkit/governance/EXTERNAL-CALL-CHECKLIST.md` | `framework/OPERATING-RULES.md`（外部调用部分） + `framework/EXTERNAL-CALL-PROTOCOL.md`（占位） | 后续拆分 | 保留待迁 |
-| `toolkit/governance/FAILURE-REPORT-CHECKLIST.md` | `framework/CORRECTION-WRITEBACK.md` + `FAILURE-PROTOCOL.md`（占位） | 后续拆分 | 保留待迁 |
+| `toolkit/governance/EXTERNAL-CALL-CHECKLIST.md` | `framework/runtime/EXTERNAL-CALL-PROTOCOL.md` | 拆分迁移 | **已迁移** |
+| `toolkit/governance/FAILURE-REPORT-CHECKLIST.md` | `framework/runtime/FAILURE-PROTOCOL.md` | 拆分迁移 | **已迁移** |
 | `toolkit/governance/templates/identity-cloud-node.md` | `framework/ROLE-CONTRACT.md` + `IDENTITY.md` | 后续拆分 | legacy 保留 |
 | `toolkit/governance/templates/user.md` | `USER.md`（bootstrap 层） | 映射承接 | 保留待迁 |
 | `toolkit/governance/schemas/` | `framework/schemas/` | 映射承接 | 已部分承接 |
@@ -247,8 +247,8 @@
 - [ ] 在 `toolkit/minimal-core/memory.md` 头部添加legacy说明和指向 `framework/continuity/MEMORY-INDEX.md` 的链接
 - [ ] 在 `toolkit/minimal-core/heartbeat.md` 头部添加legacy说明和指向 `HEARTBEAT.md` 的链接
 - [ ] 在 `toolkit/governance/TRUTH-CONTRACT-v1.md` 头部添加deprecated说明和指向 `framework/assurance/TRUTH-CONTRACT.md` 的链接
-- [ ] 评估 `EXTERNAL-CALL-CHECKLIST.md` 内容，决定是否拆分到 `EXTERNAL-CALL-PROTOCOL.md` 或保留为 legacy
-- [ ] 评估 `FAILURE-REPORT-CHECKLIST.md` 内容，决定是否拆分到 `FAILURE-PROTOCOL.md` 或保留为 legacy
+- [x] 评估 `EXTERNAL-CALL-CHECKLIST.md` 内容，迁移到 `framework/runtime/EXTERNAL-CALL-PROTOCOL.md`（已迁移；toolkit 副本保留为 legacy source）
+- [x] 评估 `FAILURE-REPORT-CHECKLIST.md` 内容，迁移到 `framework/runtime/FAILURE-PROTOCOL.md`（已迁移；toolkit 副本保留为 legacy source）
 - [ ] 更新 `toolkit/governance/templates/` 的 README，说明模板与新 `ROLE-CONTRACT.md` 的关系
 
 ## 阶段 4：成本主线决策
