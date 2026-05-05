@@ -28,29 +28,16 @@ toolkit/ 当前为 **non-active legacy reference**：不再作为运行时、治
 ---
 ---
 
-## Reading Map: Four Roots to Framework Modules
+## Philosophical Roots: 仁空玄致
 
-```text
-Four roots:
+仁空玄致不是 framework 的目录结构，而是穿透 framework 的四个哲学根。目录是工程分层，四根是判断来源。二者之间只存在主导关联，不存在一一归属。
 
-- Orientation / Constitution → core/
-  - CONSTITUTION.md anchors non-transferable boundaries and base constraints.
-- Role / Responsibility → role/
-  - ROLE-CONTRACT.md defines who may do what, and where responsibility remains anchored.
-- Continuity / Memory → continuity/
-  - MEMORY-INDEX.md and CORRECTION-WRITEBACK.md define what persists, what is corrected, and how judgment remains traceable.
-- Rhythm / Cadence → rhythm/
-  - HEARTBEAT.md defines when to pause, observe, metabolize, or continue.
-
-Branches grown from the roots:
-
-- Assurance → assurance/
-  - Truth, evidence, and completion-state constraints grown from constitutional boundaries.
-- Runtime → runtime/
-  - Execution rules, pre-flight checks, external calls, failure handling, cost, and term discipline.
-- Mapping → mapping/
-  - Alignment layer for translating concepts, legacy files, domain cases, and external references into FAO framework layers.
-```
+| Root | Meaning | Dominant associations |
+|------|---------|----------------------|
+| **仁** | 责任如何被承接——谁能收口，流动后谁仍承担 | `role/ROLE-CONTRACT.md`, `runtime/PRE-FLIGHT-SEQUENCE.md`, `core/CONSTITUTION.md` |
+| **空** | 记忆与判断如何不执死——允许废弃、松动、代谢 | `continuity/MEMORY-INDEX.md`, `continuity/CORRECTION-WRITEBACK.md`, `rhythm/HEARTBEAT.md` |
+| **玄** | 变化与不确定如何被容纳——漂移、语义不稳、环境共塑 | `runtime/OPERATING-RULES.md`, `rhythm/HEARTBEAT.md`, `runtime/TERM-MAP.md`, `mapping/` |
+| **致** | 判断如何落实为行动与验证——知行合一、写回、实例校验 | `assurance/TRUTH-CONTRACT.md`, `continuity/CORRECTION-WRITEBACK.md`, `runtime/OPERATING-RULES.md`, `mapping/verification/` |
 
 ---
 
